@@ -92,9 +92,10 @@ npm run dev
 
 ## Documentation
 
-- [Project Concept](project-concept.md) — Vision, problem statement, market analysis
-- [Project Specification](project-specification.md) — Functional and non-functional requirements
-- [Technical Documentation](technical/) — Architecture, API design, database schema, development setup
+- [Project Concept](docs/project-concept.md) — Vision, problem statement, market analysis
+- [Project Specification](docs/project-specification.md) — Functional and non-functional requirements
+- [Work Breakdown Structure](docs/wbs.md) — Project implementation plan (24 work packages)
+- [Technical Documentation](docs/technical/) — Architecture, API design, database schema, development setup
 
 ## Development
 
