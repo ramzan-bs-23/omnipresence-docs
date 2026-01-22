@@ -1,11 +1,16 @@
 """
 API URL configuration for Omnipresence.
 """
-from django.urls import path, include
+from django.urls import path
+from .views import auth
 
 urlpatterns = [
-    # API endpoint modules will be included here:
-    # path('auth/', include('app.api.auth.urls')),
+    # Authentication endpoints
+    path('auth/login/', auth.login_view, name='login'),
+    path('auth/logout/', auth.logout_view, name='logout'),
+    path('auth/me/', auth.me_view, name='me'),
+
+    # Other API endpoint modules will be included here:
     # path('participants/', include('app.api.participants.urls')),
     # path('groups/', include('app.api.groups.urls')),
     # path('sessions/', include('app.api.sessions.urls')),

@@ -27,3 +27,10 @@ class IsAdministratorOrManager(permissions.BasePermission):
 
     def has_permission(self, request):
         return request.user.is_authenticated and request.user.role in ['administrator', 'manager']
+
+
+class IsExternal(permissions.BasePermission):
+    """Allows access only to external participants."""
+
+    def has_permission(self, request):
+        return request.user.is_authenticated and request.user.role == 'external'
